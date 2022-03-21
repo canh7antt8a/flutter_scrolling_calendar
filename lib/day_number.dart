@@ -28,7 +28,7 @@ class DayNumber extends StatelessWidget {
         day < 1 ? '' : day.toString(),
         textAlign: TextAlign.center,
         style: TextStyle(
-          color: color != null ? Colors.white : Colors.black87,
+          color: color == Colors.transparent ? Colors.black87 : Colors.white,
           fontSize: screenSize(context) == ScreenSizes.small ? 8.0 : 10.0,
           fontWeight: FontWeight.normal,
         ),
